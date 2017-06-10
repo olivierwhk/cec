@@ -1,0 +1,88 @@
+<div class="scrollable">
+  <div class="scrollable-content">
+
+    <div class="list-group text-center">
+
+      <div class="list-group-item list-group-item-home">
+        <div>
+          <i class="fa fa-automobile feature-icon text-primary"></i>
+        </div>
+        <div>
+          <h3 class="home-heading">Pilotez votre journée avec ce site</h3> Toutes les informations utiles et les mises à jour sont affichées sur ce site : n'hésitez pas à le consulter régulièrement en utilisant les boutons en bas de page. Chaque section est décrite ci-dessous.
+          <h4 class="home-heading">Vous êtes perdu ?</h4>
+        </div>
+        <p>
+          <i class="fa fa-map-o"></i> Besoin d'un plan ? Regardez celui des <a ui-turn-on="modal1" href="">bâtiments du département GMP</a> ou de l'ensemble de l'<a href="https://iut-rennes.univ-rennes1.fr/sites/clone-portal/files/documents/plan-iut-rennes-mars-2016.pdf">IUT</a>,
+          ou localisez-vous sur <a href="https://www.google.fr/maps/place/Département+Génie+Mécanique+et+Productique,+35700+Rennes/@48.1232379,-1.6304195,19z/?hl=fr" target="_blank">Google Maps</a>
+        </p>
+        <p>
+          <i class="fa fa-phone"></i> Besoin de nous téléphoner ? Appelez au <a href="tel:0223234100">02 23 23 41 00</a> ou au <a href="tel:0223234102">02 23 23 41 02</a>
+        </p>
+        <p>
+          <i class="fa fa-thumbs-o-up"></i> Suivez-nous sur <a href="https://www.facebook.com/D&#xe9;partement-GMP-IUT-Rennes-375239909300092/" target="_blank">Facebook</a> !
+          <div class="fb-page" data-href="https://www.facebook.com/D&#xe9;partement-GMP-IUT-Rennes-375239909300092/" data-width="380" data-hide-cover="false" data-show-facepile="false" data-show-posts="false"></div>
+        </p>
+      </div>
+
+			<div class="list-group-item list-group-item-home">
+        <div>
+          <a href="https://basicfront.easypromosapp.com/entries/905404" class="fa fa-thumbs-o-up feature-icon text-primary"></a>
+        </div>
+        <div>
+          <h3 class="home-heading">Fanboostez une équipe !</h3><a href="https://basicfront.easypromosapp.com/entries/905404">Votez pour votre équipe préférée</a> afin qu'elle obtienne un bonus au départ d'une épreuve Knock Out !
+        </div>
+      </div>
+
+
+      <div class="list-group-item list-group-item-home">
+        <div>
+          <a href="#/planning" class="fa fa-calendar feature-icon text-primary"></a>
+        </div>
+        <div>
+          <h3 class="home-heading">Quand ont lieu mes épreuves ?</h3> Dans cette section vous pouvez rechercher une équipe, un établissement ou une salle pour afficher tous les horaires des épreuves : soyez ponctuels ! Les horaires seront réactualisés en cas de modification
+        </div>
+      </div>
+
+      <div class="list-group-item list-group-item-home">
+        <div>
+          <a href="#/runs" class="fa fa-tachometer feature-icon text-primary"></a>
+        </div>
+        <div>
+          <h3 class="home-heading">Quels sont les résultats ?</h3> Au fur et à mesure de la journée, les différents résultats des épreuves piste sont résumés dans cette section. Si vous constatez une anomalie, consultez les organisateurs au PC course immédiatement !
+        </div>
+      </div>
+
+      <div class="list-group-item list-group-item-home">
+        <div>
+          <a href="#/video" class="fa fa-film feature-icon text-primary"></a>
+        </div>
+        <div>
+          <h3 class="home-heading">Comment puis-je voir les runs ?</h3> L'espace autour des pistes est restreint : si tout se passe bien, cette section vous permet de regarder les pistes de près en quasi-direct. Attention : le visionnage de la vidéo peut consommer beaucoup de votre forfait mobile.
+        </div>
+      </div>
+
+      <div class="list-group-item list-group-item-home">
+        <div>
+          <i class="fa fa-stethoscope feature-icon  text-primary"></i>
+        </div>
+        <div>
+          <h3 class="home-heading">Un problème avec le site ?</h3>
+          <p>Merci de venir me voir au PC course avec votre appareil ou à défaut de me contacter <a class="fa fa-send text-primary" href="mailto:olivier.wong-hee-kam@univ-rennes1.fr?subject=cecmobile&body={{userAgent}}"> par mail</a> en précisant ceci :
+            <br>
+          </p>
+          <pre class="ng-binding">{{userAgent}}</pre>
+          <p>
+            Conception, réalisation : Olivier Wong, IUT GMP Rennes, 2016.
+          </p>
+          <small class="text-muted">
+            en utilisant <a href="https://angularjs.org/">Angular JS</a>, <a href="http://mobileangularui.com/">Mobile Angular UI</a> et <a href="https://spreadsheets.google.com/">Google Spreadsheets</a>
+          </small>
+        </div>
+      </div>
+      <div ui-content-for="modals">
+        <div ng-include="'modal1.html'"></div>
+      </div>
+    </div>
+
+  </div>
+</div>

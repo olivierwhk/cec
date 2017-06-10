@@ -1,0 +1,45 @@
+<div ui-content-for="title">
+  <span>Runs</span>
+</div>
+
+<div class="scrollable">
+ <div class="scrollable-content section">
+   
+  <form role="form" class="form-inline">
+      <!--<legend>Rechercher</legend>-->
+        <div class="form-group" ng-init="rpsearch.content.$t=grpsearch">
+          <label>Rechercher </label>
+
+          <input type="text" class="form-control" 
+                 ng-model="rpsearch.content.$t"
+                 placeholder="équipe, manche..."
+                 autofocus
+                 ng-change="changep()">
+        </div>
+    <input class="btn btn-primary" type="button" ng-click="reset()" value="Effacer" />
+  </form>
+    <hr>
+
+   <h3>Epreuves du matin</h3>
+   <div ng-repeat="entry in rpisteweb | filter: rpsearch | orderBy:'gsx$runrang.$t'" class="col-md-4">
+    <h4>{{ entry.gsx$equipe.$t }}</h4>
+     <div class="description">
+       <ul>
+         <li>Temps course : {{ entry.gsx$run.$t }}, n°{{ entry.gsx$runrang.$t }} ({{ entry.gsx$runpoints.$t }} pts)</li>
+         <li>Temps réaction : {{ entry.gsx$rea.$t }}, n°{{ entry.gsx$rearang.$t }} ({{ entry.gsx$reapoints.$t }} pts)</li>
+         <li>Arrêt stand : {{ entry.gsx$arr.$t }} en {{ entry.gsx$arrnb.$t }} fois ({{ entry.gsx$arrpoints.$t }} pts)</li>
+       </ul>
+     </div>
+   </div>
+   <h3>Knock-Out (après-midi)</h3>
+   <div ng-repeat="entry in rkoweb | filter: rpsearch" class="col-md-4">
+    <h4>{{ entry.gsx$stage.$t }}</h4>
+     <div class="description">
+       <ul>
+         <li>{{ entry.gsx$ateam.$t }} ({{ entry.gsx$amin.$t }} ) VS {{ entry.gsx$bteam.$t }} ({{ entry.gsx$bmin.$t }})</li>
+         <li>gagnant : {{ entry.gsx$gagnant.$t }}, rang : {{ entry.gsx$grang.$t }}</li>
+       </ul>
+     </div>
+   </div>
+ </div>
+</div>
