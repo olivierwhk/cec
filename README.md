@@ -17,7 +17,7 @@ Vous souhaitez adapter le site à votre finale régionale ? Bientôt un guide pa
 
 Le site utilise Google spreadsheets et Mobile Angular UI, un framework HTML5 mobile qui s'appuie sur Angular Js et Bootstrap 3.
 
-### Support development
+### Licences
 
 Distribué sous [License CeCILL-B](https://github.com/olivierwhk/cec/blob/master/LICENCE_FR)
 Distributed under [License CeCILL-B](https://github.com/olivierwhk/cec/blob/master/LICENCE)
